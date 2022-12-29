@@ -740,17 +740,17 @@ body {
 .modal-list svg {
   position: absolute;
   left: 15px;
-  top: 35px;
+  top: 36px;
 }
 
 .modal-list .icon-person {
   left: 15px;
-  top: 30px;
+  top: 36px;
 }
 
 .modal-list .icon-phone {
   left: 15px;
-  top: 35px;
+  top: 40px;
 }
 
 .modal-list input {
