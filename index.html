@@ -540,25 +540,29 @@
             </ul>
           </li>
           <li>
-            <ul class="subscription">
-              <li class="subscription-list">
-                <label
-                  ><span>Zapisz się do newslettera</span>
-                  <input
-                    class="subscription-input"
-                    name="subscription"
-                    placeholder="E-mail"
-                /></label>
-              </li>
-              <li>
-                <button type="submit">
-                  <span class="button-text">Zapisz się</span
-                  ><svg width="24" height="24">
-                    <use href="./images/icons.svg#icon-send"></use>
-                  </svg>
-                </button>
-              </li>
-            </ul>
+            <form>
+              <ul class="subscription">
+                <li class="subscription-list">
+                  <label
+                    ><span>Zapisz się do newslettera</span>
+                    <input
+                      type="email"
+                      class="subscription-input"
+                      name="subscription"
+                      placeholder="E-mail"
+                      required
+                  /></label>
+                </li>
+                <li>
+                  <button type="submit">
+                    <span class="button-text">Zapisz się</span
+                    ><svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </form>
           </li>
         </ul>
       </footer>
@@ -572,10 +576,10 @@
             <li class="modal-list">
               <label
                 ><span>Imię</span>
-                <svg height="12" width="12">
+                <svg height="12" width="12" class="icon-person">
                   <use href="./images/icons.svg#icon-person-black"></use>
                 </svg>
-                <input class="modal-input" type="text" name="name"
+                <input class="modal-input" type="text" name="name" required
               /></label>
             </li>
             <li class="modal-list">
@@ -584,7 +588,12 @@
                 <svg height="13" width="13">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
-                <input class="modal-input" type="text" name="phone"
+                <input
+                  class="modal-input"
+                  type="tel"
+                  name="phone"
+                  pattern="[0-9]{9}"
+                  required
               /></label>
             </li>
             <li class="modal-list">
@@ -593,7 +602,7 @@
                 <svg height="12px" width="15px" class="icon-email-black">
                   <use href="./images/icons.svg#icon-email-black"></use>
                 </svg>
-                <input class="modal-input" type="text" name="email"
+                <input class="modal-input" type="email" name="email" required
               /></label>
             </li>
             <li class="modal-list">
@@ -608,7 +617,7 @@
             </li>
             <li class="modal-check check-text">
               <label class="check-label"
-                ><input class="check-box" type="checkbox" /><svg
+                ><input class="check-box" type="checkbox" required /><svg
                   class="check-icon"
                   height="15"
                   width="16">
